@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+}
+
+#first{
+  display: none;
+}
+
+.blank {
+  height: 100px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+label {
+  display: block;
+}
+
+ul {
+  font-size: 15px;
+}
+
+.helptext {
+  padding: 10px;
+  display: block;
+}
+
+.form-body {
+  border: solid wheat 1px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  font-size: 20px;
+}
+
+/* Style the form fields */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #845ec2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #790992;
+}
+
+#signin {
+  text-decoration: none;
+}
+
+/* Additional styling for the container (centering content) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form p {
+  display: block;
+  margin-left: 10%;
+
+}
+
+form {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px;
+}
+
+/* Add some responsive styles if needed */
+@media (max-width: 768px) {
+  #first{
+    display: block;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  form p {
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}

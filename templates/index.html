@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+</head>
+
+<body>
+  <center>
+    <a href="{% url 'users:signup' %}" onclick="replaceURL('/users/login/'); return false;">
+      <button class="action-btn">
+        Login
+      </button>
+    </a>
+    <a href="{% url 'users:signup' %}">
+      <button class="action-btn">
+        Signup
+      </button> </a>
+  </center>
+  <script>
+    function replaceURL(newURL) {
+      window.location.href = newURL;
+    }
+  </script>
+</body>
+
+</html>
