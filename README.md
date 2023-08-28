@@ -101,7 +101,7 @@ that's all.
 ---
 
 
-<h2 align="left">Please Put a comment or issue for which you are going to contribute.</h2>
+<h2 align="left">Please Put a comment or issue in 'Issues' area for which you are going to contribute.</h2>
 
 ###
 
@@ -125,7 +125,7 @@ that's all.
 
 ###
 
-<p align="left">Please follow our coding conventions and style guidelines. For example:</p>
+<p align="left">Please follow our coding conventions and style guidelines.</p>
 
 ###
 
