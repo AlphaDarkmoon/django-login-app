@@ -43,12 +43,15 @@ LOGOUT_REDIRECT_URL = "testmain_app:home"
 - replace `testmain_app` with your main app that will serve your home page
 and replace `home` with your `index.html` views refrence.
 
-```
-#views.py
+7. Add the following in core(delete)'s urls.py
 
-def home(request):
-    # Render the 'index.html' template
-    return render(request, 'index.html')
+```
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    ...                       
+    path("users/", include("users.urls")),                      #made changes
+    path("users/", include("django.contrib.auth.urls")),        #made changes
+]    
 ```
 
 7. add app name in main app's `urls.py`
@@ -76,6 +79,19 @@ python3 manage.py createsuperuser
 11. Run the project
 ```
 python3 manage.py runserver
+```
+
+12. Replace any and all url paths in every app.
+
+if its like this:
+```
+href="{% url 'home' %}"
+```
+
+then replace it with:
+
+```
+href="{% url 'main_app:home' %}"
 ```
 
 that's all.
